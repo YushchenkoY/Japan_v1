@@ -82,7 +82,7 @@ body {
         display: none;
         width: 80%;
         height: 100px;
-        margin: auto;
+        margin: 0 auto;
         @media (min-width: $breakpoint-l) {
             display: block;
         }
