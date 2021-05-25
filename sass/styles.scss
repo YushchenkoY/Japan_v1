@@ -1,0 +1,100 @@
+@import '_fonts.scss';
+@import '_variables.scss';
+@import 'header.scss';
+@import 'page__content.scss';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    min-width: 375px;
+    height: 100vh;
+    width: 100vw;
+    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.button {
+    display: block;
+    position: relative;
+    background-color: none;
+    margin: 0 auto;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        left: 2%;
+        top: 15%;
+        height: 70%;
+        width: 100%;
+        background-color: none;
+        background-image: url("../img/general/btn/BG.png");
+        background-size: 100% 100%;
+        z-index: 5;
+    }
+
+    &::after {
+        content: '今すぐ登録';
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: none;
+        background-image: url("../img/general/btn/border.png");
+        background-size: 100% 100%;
+        z-index: 6;
+        text-align: center;
+        font-size: 24px;
+        font-family: "Kozuka Gothic Pr6N";
+        color: rgb(0, 0, 200);
+        line-height: 80px;
+        font-weight: 900;
+
+        @media (min-width: $breakpoint-l) {
+            font-size: 32px;
+            line-height: 100px;
+        }
+    }
+    &.card_button {
+        position: absolute;
+        width: 80%;
+        height: 80px;
+        top: 40%;
+        left: 10%;
+        @media (min-width: $breakpoint-l) {
+            display: none;
+        }
+    }
+    &.offer_button {
+        display: none;
+        width: 80%;
+        height: 100px;
+        margin: auto;
+        @media (min-width: $breakpoint-l) {
+            display: block;
+        }
+
+    }
+}
+
+%effect {
+    -webkit-filter: url("#glitch");
+    filter: url("#glitch");
+}
+.glitch {
+    @extend %effect;
+    display: inline-block;
+}
