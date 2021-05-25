@@ -115,16 +115,17 @@
         width: 700px;
     }
     @media (min-width: $breakpoint-l) {
+        justify-content: space-between;
         flex-direction: column;
         margin: auto 10px;
         width: 120px;
-        height: 80%;
+        height: 70%;
     }
 
     .squares_item {
         width: 70px;
         height: 70px;
-        background-image: url("/img/general/icons/square.png");
+        background-image: url("../img/general/icons/square.png");
         background-size: cover;
         position: relative;
 
@@ -242,7 +243,7 @@
             margin: auto 10px;
             display: flex;
             flex-direction: column;
-            align-content: space-around;
+            align-content: space-evenly;
             width: 35%;
             height: 80%;
         }
