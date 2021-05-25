@@ -140,7 +140,8 @@
     height: 100%;
     width: 100%;
     background-image: url("../img/general/border_card.png");
-    background-size: cover; }
+    background-size: cover;
+    z-index: 3; }
   .card .card_girl {
     width: auto;
     margin: 0 auto;
@@ -213,13 +214,35 @@
     @media (min-width: 992px) {
       .squares .squares_line_web {
         display: block; } }
+  .squares .icon {
+    animation: blinking 6s ease infinite; }
+
+@keyframes blinking {
+  0% {
+    opacity: 1; }
+  10% {
+    opacity: 0.5; }
+  20% {
+    opacity: 1; }
+  30% {
+    opacity: 0.5; }
+  40% {
+    opacity: 1; }
+  50% {
+    opacity: 0.5; }
+  60% {
+    opacity: 1; }
+  69% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
   .squares .icon__win {
     position: absolute;
     left: 0;
     top: 0;
-    animation: gain 6s ease infinite; }
+    animation: blinking_wim 6s ease infinite; }
 
-@keyframes gain {
+@keyframes blinking_wim {
   0% {
     opacity: 0; }
   68% {
@@ -329,12 +352,12 @@ body {
     content: '';
     position: absolute;
     display: block;
-    left: 2%;
+    left: 5%;
     top: 15%;
     height: 70%;
     width: 100%;
     background-color: none;
-    background-image: url("../img/general/btn/BG.png");
+    background-image: url("../img/general/btn/BG.gif");
     background-size: 100% 100%;
     z-index: 5; }
   .button::after {

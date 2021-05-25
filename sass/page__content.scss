@@ -88,6 +88,7 @@
         width: 100%;
         background-image: url("../img/general/border_card.png");
         background-size: cover;
+        z-index: 3;
     }
 
     .card_girl {
@@ -181,15 +182,50 @@
             display: block;
         }
     }
+    .icon{
+        animation: blinking 6s ease infinite;
+    }
+    @keyframes blinking {
+        0% {
+            opacity: 1;
+        }
+        10%{
+            opacity: 0.5;
+        }
+        20% {
+            opacity: 1;
+        }
+        30%{
+            opacity: 0.5;
+        }
+        40% {
+            opacity: 1;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        60% {
+            opacity: 1;
+        }
+        69% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+
 
     .icon__win {
         position: absolute;
         left: 0;
         top: 0;
-        animation: gain 6s ease infinite;
+        animation: blinking_wim 6s ease infinite;
     }
 
-    @keyframes gain {
+    @keyframes blinking_wim {
         0% {
             opacity: 0;
         }
