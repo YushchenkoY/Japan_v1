@@ -91,12 +91,3 @@ body {
 
     }
 }
-
-%effect {
-    -webkit-filter: url("#glitch");
-    filter: url("#glitch");
-}
-.glitch {
-    @extend %effect;
-    display: inline-block;
-}

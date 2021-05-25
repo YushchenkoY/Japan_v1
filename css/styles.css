@@ -400,10 +400,3 @@ body {
     @media (min-width: 992px) {
       .button.offer_button {
         display: block; } }
-
-.glitch {
-  -webkit-filter: url("#glitch");
-  filter: url("#glitch"); }
-
-.glitch {
-  display: inline-block; }
