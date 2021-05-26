@@ -2,7 +2,6 @@
 @import '_variables.scss';
 @import 'header.scss';
 @import 'page__content.scss';
-@import '../node_modules/compass-mixins/lib/compass/css3';
 
 * {
     box-sizing: border-box;
@@ -10,8 +9,7 @@
     margin: 0;
 }
 
-a,
-button {
+a {
     text-decoration: none;
     cursor: pointer;
 }
@@ -20,7 +18,7 @@ body {
     min-width: 375px;
     height: 100vh;
     width: 100vw;
-    font-family: kozuka-gothic-pr6n, sans-serif;
+    font-family: "Kozuka Gothic Pr6N";
     font-stretch:  ultra-condensed; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale

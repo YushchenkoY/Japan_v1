@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "compass-mixins": "^0.12.10",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0"
   }
