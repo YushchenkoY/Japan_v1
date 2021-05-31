@@ -175,7 +175,8 @@
     height: 70px;
     background-image: url("../img/general/icons/square.png");
     background-size: cover;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     @media (min-width: 520px) {
       .squares .squares_item {
         width: 100px;
@@ -215,64 +216,94 @@
       .squares .squares_line_web {
         display: block; } }
   .squares .icon--one {
-    animation: blinking_1 6s ease infinite; }
+    animation: blinking_1 8s linear infinite; }
 
 @keyframes blinking_1 {
   0% {
     opacity: 1; }
-  5% {
-    opacity: 0.7; }
-  10% {
+  7% {
     opacity: 1; }
-  15% {
-    opacity: 0.7; }
-  20% {
+  8% {
+    opacity: 0; }
+  23% {
+    opacity: 0; }
+  24% {
     opacity: 1; }
-  25% {
+  31% {
+    opacity: 1; }
+  32% {
+    opacity: 0; }
+  47% {
+    opacity: 0; }
+  48% {
+    opacity: 1; }
+  55% {
+    opacity: 1; }
+  56% {
     opacity: 0; }
   100% {
     opacity: 0; } }
   .squares .icon--two {
-    animation: blinking_2 6s ease infinite; }
+    animation: blinking_2 8s linear infinite; }
 
 @keyframes blinking_2 {
   0% {
     opacity: 0; }
-  24% {
+  7% {
     opacity: 0; }
-  25% {
+  8% {
     opacity: 1; }
-  30% {
-    opacity: 0.7; }
-  35% {
+  15% {
+    opacity: 1; }
+  16% {
+    opacity: 0; }
+  31% {
+    opacity: 0; }
+  32% {
+    opacity: 1; }
+  39% {
     opacity: 1; }
   40% {
-    opacity: 0.7; }
-  45% {
+    opacity: 0; }
+  55% {
+    opacity: 0; }
+  56% {
     opacity: 1; }
-  50% {
+  63% {
+    opacity: 1; }
+  64% {
     opacity: 0; }
   100% {
     opacity: 0; } }
   .squares .icon--three {
-    animation: blinking_3 6s ease infinite; }
+    animation: blinking_3 8s linear infinite; }
 
 @keyframes blinking_3 {
   0% {
     opacity: 0; }
-  49% {
+  15% {
     opacity: 0; }
-  50% {
+  16% {
     opacity: 1; }
-  55% {
-    opacity: 0.7; }
-  60% {
+  23% {
     opacity: 1; }
-  65% {
-    opacity: 0.7; }
-  70% {
+  24% {
+    opacity: 0; }
+  39% {
+    opacity: 0; }
+  40% {
     opacity: 1; }
-  75% {
+  47% {
+    opacity: 1; }
+  48% {
+    opacity: 0; }
+  63% {
+    opacity: 0; }
+  64% {
+    opacity: 1; }
+  71% {
+    opacity: 1; }
+  72% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -280,25 +311,29 @@
     position: absolute;
     left: 0;
     top: 0;
-    animation: blinking_win 6s ease infinite; }
+    animation: blinking_win 8s linear infinite; }
 
 @keyframes blinking_win {
   0% {
     opacity: 0; }
-  74% {
+  71% {
     opacity: 0; }
+  72% {
+    opacity: 1; }
   75% {
+    opacity: 0.5; }
+  79% {
     opacity: 1; }
-  80% {
-    opacity: 0.7; }
-  85% {
+  83% {
+    opacity: 0.5; }
+  87% {
     opacity: 1; }
-  90% {
-    opacity: 0.7; }
+  91% {
+    opacity: 0.5; }
   95% {
     opacity: 1; }
   100% {
-    opacity: 0.7; } }
+    opacity: 0; } }
 
 .offer {
   margin: auto 0;
